@@ -95,7 +95,7 @@ RSpec.describe 'Tasks API', type: :request do
 
   describe 'POST /tasks/reorder' do
     context 'when parameter is valid' do
-      context 'when task change its position goint to start of the TODO list' do
+      context 'when task change its position going to start of the TODO list' do
         let(:reorder_params) do
           {
             reorder: [
@@ -123,7 +123,7 @@ RSpec.describe 'Tasks API', type: :request do
           }
         end
 
-        it 'change the task position to start of the TODO list' do
+        it 'change the task position' do
           post reorder_tasks_path, params: reorder_params
 
           expect(response).to have_http_status(:ok)
@@ -143,7 +143,7 @@ RSpec.describe 'Tasks API', type: :request do
           }
         end
 
-        it 'change the task position to start of the TODO list' do
+        it 'change the task position' do
           post reorder_tasks_path, params: reorder_params
 
           expect(response).to have_http_status(:ok)
