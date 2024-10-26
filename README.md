@@ -10,7 +10,7 @@ This TODO List API allows users to manage tasks with CRUD operations and support
 
 1. Clone this repository
 2. Install Dependencies using `bunlde install` command
-3. Setup the Database `rails db:create db:migrate`
+3. Setup the Database `rails db:create db:migrate db:seed`
 4. Run the Application `rails server`
 5. Run Tests `rspec` (Just to heads up I just only wrote unit test for the controller to cover the scenarios unit testing for services was not included)
 
